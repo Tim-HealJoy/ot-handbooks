@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>如廁訓練大寶典｜施昱廷 職能治療師</title>
+<meta name="description" content="失智、衰弱、失禁長輩的如廁照顧指南——9 大情境 QA，家屬與照服員都能一目了然。施昱廷職能治療師整理。">
+<style>
+  :root{
+    --jet:#13262F;
+    --olive:#73683B;
+    --walnut:#583E23;
+    --khaki:#B0A084;
+    --cream:#F4EFE3;
+    --card:#FAF6EE;
+    --lavender:#E9E6FF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    background:var(--cream);
+    color:var(--jet);
+    line-height:1.75;
+    font-size:17px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px;}
+
+  /* ===== 封面 ===== */
+  header{
+    background:
+      radial-gradient(circle at 12% 20%, rgba(232,199,102,.20), transparent 44%),
+      radial-gradient(circle at 88% 10%, rgba(233,230,255,.15), transparent 42%),
+      radial-gradient(circle at 82% 88%, rgba(143,174,107,.24), transparent 46%),
+      radial-gradient(circle at 8% 90%, rgba(127,168,201,.18), transparent 40%),
+      linear-gradient(150deg, #0F1E26 0%, #13262F 48%, #1F3E2D 100%);
+    color:var(--lavender);
+    padding:50px 0 46px;
+    text-align:center;
+  }
+  header .kicker{
+    font-size:14px;letter-spacing:.35em;color:#E8C766;
+    margin-bottom:16px;font-weight:700;
+  }
+  header h1{
+    font-size:34px;font-weight:800;letter-spacing:.06em;
+    color:#fff;margin-bottom:14px;line-height:1.4;
+  }
+  header h1 .hl{color:#E8C766;}
+  header .sub{font-size:16px;color:var(--lavender);opacity:.94;margin-bottom:20px;}
+  header .author{
+    display:inline-block;border:1.5px solid #E8C766;
+    border-radius:999px;padding:8px 24px;font-size:14px;color:#E8C766;font-weight:700;
+  }
+  header svg{display:block;margin:0 auto 14px;}
+  .chips{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin:0 0 24px;}
+  .chip{font-size:13px;font-weight:800;padding:6px 16px;border-radius:999px;letter-spacing:.05em;}
+  .chip.c1{background:#E8C766;color:#13262F;}
+  .chip.c2{background:#7FA8C9;color:#0F1E26;}
+  .chip.c3{background:#8FAE6B;color:#0F1E26;}
+  .chip.c4{background:#E9E6FF;color:#13262F;}
+
+  /* ===== 開場 ===== */
+  .intro{padding:44px 0 8px;}
+  .intro p{margin-bottom:14px;}
+  .intro .lead{font-size:18px;font-weight:700;color:var(--walnut);}
+
+  /* ===== 目錄 ===== */
+  .toc{
+    background:var(--card);border-radius:16px;
+    padding:26px 26px 20px;margin:28px 0 8px;
+    box-shadow:0 2px 10px rgba(19,38,47,.06);
+  }
+  .toc h2{font-size:17px;color:var(--olive);margin-bottom:14px;letter-spacing:.1em;}
+  .toc ol{list-style:none;counter-reset:toc;}
+  .toc li{
+    counter-increment:toc;padding:7px 0;font-size:16px;
+    border-bottom:1px dashed #E3DCC9;display:flex;gap:12px;align-items:baseline;
+  }
+  .toc li:last-child{border-bottom:none;}
+  .toc li::before{
+    content:"Q" counter(toc);
+    font-weight:800;color:var(--olive);font-size:14px;min-width:32px;
+  }
+  .toc a{color:var(--jet);text-decoration:none;}
+
+  /* ===== 章節 ===== */
+  section{padding:30px 0 6px;}
+  .qhead{
+    display:flex;gap:14px;align-items:flex-start;margin-bottom:16px;
+  }
+  .qnum{
+    flex:none;width:46px;height:46px;border-radius:50%;
+    background:var(--olive);color:#fff;font-weight:800;font-size:17px;
+    display:flex;align-items:center;justify-content:center;margin-top:3px;
+  }
+  .qhead h2{font-size:22px;line-height:1.5;color:var(--jet);font-weight:800;}
+  .scene{
+    background:var(--card);
+    border-radius:12px;padding:14px 18px;margin-bottom:16px;
+    font-size:15.5px;color:var(--walnut);
+  }
+  .ans-first{
+    font-size:18px;font-weight:800;color:var(--walnut);
+    margin-bottom:12px;
+  }
+  section p{margin-bottom:12px;}
+
+  .card{
+    background:var(--card);border-radius:14px;
+    padding:20px 22px;margin:14px 0;
+    box-shadow:0 2px 8px rgba(19,38,47,.05);
+  }
+  .card h3{font-size:16px;color:var(--olive);margin-bottom:10px;letter-spacing:.05em;}
+  .card ul,.card ol{padding-left:22px;}
+  .card li{margin-bottom:8px;}
+  .card li:last-child{margin-bottom:0;}
+
+  /* ===== 圖解 ===== */
+  .fig{
+    background:var(--card);border-radius:14px;
+    padding:18px 14px 10px;margin:14px 0;text-align:center;
+    box-shadow:0 2px 8px rgba(19,38,47,.05);
+  }
+  .fig svg{max-width:100%;height:auto;}
+  .fig .figcap{
+    font-size:13.5px;color:#8a816d;margin:8px 4px 6px;line-height:1.6;
+  }
+
+  table{
+    width:100%;border-collapse:collapse;background:var(--card);
+    border-radius:12px;overflow:hidden;margin:14px 0;font-size:15px;
+  }
+  th{
+    background:var(--walnut);color:#fff;font-weight:700;
+    padding:10px 12px;text-align:left;
+  }
+  td{padding:10px 12px;border-bottom:1px solid #EDE6D5;vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+
+  .steps{list-style:none;counter-reset:st;margin:14px 0;}
+  .steps li{
+    counter-increment:st;position:relative;
+    padding:12px 16px 12px 58px;background:var(--card);
+    border-radius:12px;margin-bottom:10px;
+    box-shadow:0 2px 8px rgba(19,38,47,.05);
+  }
+  .steps li::before{
+    content:counter(st);
+    position:absolute;left:14px;top:50%;transform:translateY(-50%);
+    width:30px;height:30px;border-radius:50%;
+    background:var(--olive);color:#fff;font-weight:800;font-size:15px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .steps li b{color:var(--walnut);}
+
+  .tip{
+    border-radius:12px;background:#EFE9D8;
+    padding:14px 18px;margin:14px 0;font-size:15.5px;
+  }
+  .tip b{color:var(--olive);}
+  .warn{
+    border-radius:12px;background:var(--walnut);color:#F7F2E7;
+    padding:16px 20px;margin:14px 0;font-size:15.5px;
+  }
+  .warn b{color:var(--lavender);}
+
+  .evidence{
+    font-size:13px;color:#7d7461;margin:10px 0 4px;
+    padding-left:14px;border-left:3px solid var(--khaki);line-height:1.6;
+  }
+
+  /* ===== 影片卡 ===== */
+  .vidbox{margin:16px 0 6px;}
+  .vidbox h3{
+    font-size:15px;color:var(--olive);letter-spacing:.08em;
+    margin-bottom:10px;font-weight:800;
+  }
+  a.vid{
+    display:flex;gap:14px;align-items:center;text-decoration:none;
+    background:var(--card);border-radius:14px;padding:14px 16px;
+    margin-bottom:10px;box-shadow:0 2px 8px rgba(19,38,47,.05);
+  }
+  .vid .play{
+    flex:none;width:44px;height:44px;border-radius:50%;
+    background:var(--walnut);display:flex;align-items:center;justify-content:center;
+  }
+  .vid .play svg{display:block;}
+  .vid .vinfo{min-width:0;}
+  .vid .vtitle{
+    display:block;font-size:15.5px;font-weight:700;color:var(--jet);line-height:1.5;
+  }
+  .vid .vsrc{display:block;font-size:13px;color:var(--olive);margin-top:2px;}
+  .vid .vurl{
+    display:block;font-size:11.5px;color:#9a9077;margin-top:2px;
+    word-break:break-all;line-height:1.4;
+  }
+
+  /* ===== 章節分隔 ===== */
+  .divider{
+    text-align:center;color:var(--khaki);
+    margin:26px 0 0;font-size:20px;letter-spacing:.6em;
+  }
+
+  /* ===== CTA ===== */
+  .cta{
+    background:var(--jet);color:#fff;
+    border-radius:20px;padding:38px 30px;margin:44px 0 20px;
+    text-align:center;
+  }
+  .cta h2{font-size:23px;color:#fff;margin-bottom:12px;line-height:1.5;}
+  .cta p{color:var(--lavender);font-size:15.5px;margin-bottom:22px;}
+  .cta a.btn{
+    display:inline-block;background:var(--olive);color:#fff;
+    text-decoration:none;font-weight:800;font-size:16px;
+    padding:13px 34px;border-radius:999px;margin:5px 6px;
+  }
+  .cta a.btn.ghost{background:transparent;border:1.5px solid var(--khaki);color:var(--lavender);font-weight:600;}
+  .cta .handle{margin-top:16px;font-size:13.5px;color:var(--khaki);}
+
+  /* ===== 頁尾 ===== */
+  .refs{padding:8px 0 20px;}
+  .refs h2{font-size:16px;color:var(--olive);margin-bottom:10px;}
+  .refs ul{list-style:none;}
+  .refs li{
+    font-size:12.5px;color:#7d7461;margin-bottom:7px;
+    padding-left:14px;text-indent:-14px;line-height:1.6;
+  }
+  .disclaim{
+    font-size:12.5px;color:#8a816d;background:var(--card);
+    border-radius:12px;padding:14px 18px;margin:10px 0 26px;line-height:1.7;
+  }
+  footer{
+    text-align:center;font-size:12.5px;color:#8a816d;
+    padding:0 0 44px;
+  }
+
+  /* ===== 列印 ===== */
+  @media print{
+    body{background:#fff;font-size:13px;}
+    header{padding:40px 0 34px;}
+    .card,.toc,.steps li,table,.fig,a.vid{box-shadow:none;border:1px solid #E5DEC9;}
+    section{padding:18px 0 4px;}
+    .qhead{page-break-after:avoid;}
+    .fig,.card,table,.warn,.tip,a.vid,.steps li{page-break-inside:avoid;}
+    .cta{page-break-inside:avoid;}
+    a{color:inherit;}
+  }
+  @media(max-width:480px){
+    header h1{font-size:27px;}
+    .qhead h2{font-size:19px;}
+    body{font-size:16px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">如 廁 訓 練 大 寶 典</div>
+    <!-- 封面插畫：照顧者陪長輩走向馬桶 -->
+    <svg width="320" height="132" viewBox="0 0 320 132" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- 地面 -->
+      <line x1="30" y1="118" x2="292" y2="118" stroke="#B0A084" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+      <!-- 愛心 -->
+      <path d="M104 14 C101 8 92 8 90.5 14 C89 19.5 96.5 24 104 30 C111.5 24 119 19.5 117.5 14 C116 8 107 8 104 14 Z" fill="#E8C766"/>
+      <!-- 星星點綴 -->
+      <path d="M56 30 L58 35.4 L63.4 37.4 L58 39.4 L56 44.8 L54 39.4 L48.6 37.4 L54 35.4 Z" fill="#E9E6FF" opacity=".85"/>
+      <path d="M148 20 L149.4 24 L153.4 25.4 L149.4 26.8 L148 30.8 L146.6 26.8 L142.6 25.4 L146.6 24 Z" fill="#7FA8C9" opacity=".9"/>
+      <!-- 照顧者（綠） -->
+      <circle cx="76" cy="46" r="12" fill="none" stroke="#8FAE6B" stroke-width="4.5"/>
+      <circle cx="72.5" cy="44" r="1.5" fill="#8FAE6B"/>
+      <circle cx="79.5" cy="44" r="1.5" fill="#8FAE6B"/>
+      <path d="M72 50 q4 3 8 0" fill="none" stroke="#8FAE6B" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="77" y1="58" x2="79" y2="90" stroke="#8FAE6B" stroke-width="5" stroke-linecap="round"/>
+      <line x1="79" y1="90" x2="69" y2="116" stroke="#8FAE6B" stroke-width="5" stroke-linecap="round"/>
+      <line x1="79" y1="90" x2="90" y2="114" stroke="#8FAE6B" stroke-width="5" stroke-linecap="round"/>
+      <line x1="78" y1="66" x2="112" y2="72" stroke="#8FAE6B" stroke-width="4.5" stroke-linecap="round"/>
+      <!-- 長輩（金） -->
+      <circle cx="122" cy="52" r="12" fill="none" stroke="#E8C766" stroke-width="4.5"/>
+      <circle cx="118.5" cy="50" r="1.5" fill="#E8C766"/>
+      <circle cx="125.5" cy="50" r="1.5" fill="#E8C766"/>
+      <path d="M118 56 q4 3 8 0" fill="none" stroke="#E8C766" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="123" y1="64" x2="127" y2="92" stroke="#E8C766" stroke-width="5" stroke-linecap="round"/>
+      <line x1="127" y1="92" x2="117" y2="116" stroke="#E8C766" stroke-width="5" stroke-linecap="round"/>
+      <line x1="127" y1="92" x2="137" y2="114" stroke="#E8C766" stroke-width="5" stroke-linecap="round"/>
+      <line x1="124" y1="70" x2="146" y2="80" stroke="#E8C766" stroke-width="4" stroke-linecap="round"/>
+      <line x1="146" y1="80" x2="150" y2="116" stroke="#E8C766" stroke-width="3" stroke-linecap="round"/>
+      <!-- 引路光點 -->
+      <g fill="#E8C766">
+        <circle cx="178" cy="104" r="4" opacity=".95"/>
+        <circle cx="202" cy="104" r="4" opacity=".75"/>
+        <circle cx="226" cy="104" r="4" opacity=".55"/>
+      </g>
+      <!-- 馬桶（薰衣草紫） -->
+      <rect x="272" y="52" width="18" height="42" rx="4" fill="#E9E6FF"/>
+      <rect x="240" y="88" width="42" height="11" rx="5" fill="#E9E6FF"/>
+      <path d="M246 99 L280 99 L275 114 C 273 118 251 118 249 114 Z" fill="#E9E6FF"/>
+    </svg>
+    <h1>長輩一直<span class="hl">跑廁所</span>，<br>怎麼辦？</h1>
+    <div class="sub">失智・衰弱・失禁長輩的如廁照顧 QA 手冊</div>
+    <div class="chips">
+      <span class="chip c1">9 大情境 QA</span>
+      <span class="chip c2">國際實證依據</span>
+      <span class="chip c3">影片教學</span>
+      <span class="chip c4">圖解示範</span>
+    </div>
+    <div class="author">施昱廷 職能治療師｜整理編寫</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- 開場 -->
+  <div class="intro">
+    <p class="lead">照顧長輩的你，辛苦了。</p>
+    <p>「一直吵著要上廁所」「來不及走到廁所就濕了」「怕他尿床，不敢讓他喝水」——這些狀況，幾乎是每個照顧失智或衰弱長輩的家庭都會遇到的日常。</p>
+    <p>這本小手冊想告訴你兩件事：<b>第一，這些問題大多找得到原因；第二，找到原因，就有方法。</b>以下 9 個情境都以問答方式呈現，每一題先給你一句話的答案，再告訴你具體怎麼做。方法都有國際研究依據，出處放在各段落與手冊最後；部分主題也附上優質的影片教學，掃描連結就能跟著做。</p>
+    <p>你可以從頭讀，也可以直接從目錄挑你最頭痛的那一題。</p>
+  </div>
+
+  <!-- 目錄 -->
+  <nav class="toc">
+    <h2>目錄｜你現在最困擾的是哪一個？</h2>
+    <ol>
+      <li><a href="#q1">長輩一直說要上廁所，剛上完又要去，是失智變嚴重了嗎？</a></li>
+      <li><a href="#q2">怕他一直尿，可以少給他喝水嗎？</a></li>
+      <li><a href="#q3">常常來不及走到廁所就漏出來了，怎麼辦？</a></li>
+      <li><a href="#q4">失智長輩找不到廁所、甚至拒絕進廁所，怎麼辦？</a></li>
+      <li><a href="#q5">已經包尿布了，還有機會脫離尿布嗎？</a></li>
+      <li><a href="#q6">半夜一直起來上廁所，全家都睡不好，怎麼辦？</a></li>
+      <li><a href="#q7">長輩排便好困難，需要買腳凳嗎？</a></li>
+      <li><a href="#q8">尿意一來就忍不住，有辦法「訓練」嗎？</a></li>
+      <li><a href="#q9">什麼狀況應該趕快就醫？</a></li>
+    </ol>
+  </nav>
+
+  <!-- Q1 -->
+  <section id="q1">
+    <div class="qhead">
+      <div class="qnum">Q1</div>
+      <h2>長輩一直說要上廁所，剛上完又要去，是失智變嚴重了嗎？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>阿嬤十分鐘前才上完廁所，現在又吵著要去。家人開始不耐煩：「不是剛上過嗎！」</div>
+    <p class="ans-first">✦ 一句話答案：頻尿不等於膀胱壞掉，更不一定是失智惡化——先當偵探，找原因。</p>
+
+    <!-- 圖解：偵探找原因 -->
+    <div class="fig">
+      <svg width="560" height="150" viewBox="0 0 560 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="頻尿背後有八種常見原因">
+        <!-- 放大鏡 -->
+        <circle cx="90" cy="62" r="34" fill="#FAF6EE" stroke="#73683B" stroke-width="7"/>
+        <line x1="115" y1="88" x2="142" y2="116" stroke="#73683B" stroke-width="10" stroke-linecap="round"/>
+        <!-- 鏡片裡的長輩：眉頭深鎖 -->
+        <path d="M74 50 q6 -5 12 0" fill="none" stroke="#583E23" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M94 50 q6 -5 12 0" fill="none" stroke="#583E23" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="80" cy="58" r="2.4" fill="#583E23"/>
+        <circle cx="100" cy="58" r="2.4" fill="#583E23"/>
+        <path d="M80 76 q10 -7 20 0" fill="none" stroke="#583E23" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M116 44 q5 8 0 11 q-5 -3 0 -11" fill="#7FA8C9"/>
+        <text x="52" y="26" font-size="22" font-weight="800" fill="#73683B">？</text>
+        <text x="90" y="142" text-anchor="middle" font-size="14" fill="#583E23" font-weight="700">一直想尿</text>
+        <!-- 箭頭 -->
+        <path d="M160 62 L 208 62" stroke="#B0A084" stroke-width="4" stroke-linecap="round"/>
+        <path d="M200 52 L 214 62 L 200 72 Z" fill="#B0A084"/>
+        <!-- 八格原因 -->
+        <g font-size="13" font-weight="700" fill="#13262F" text-anchor="middle">
+          <rect x="228" y="14" width="76" height="34" rx="9" fill="#EFE9D8"/><text x="266" y="36">喝太少</text>
+          <rect x="312" y="14" width="76" height="34" rx="9" fill="#EFE9D8"/><text x="350" y="36">感染</text>
+          <rect x="396" y="14" width="76" height="34" rx="9" fill="#EFE9D8"/><text x="434" y="36">咖啡因</text>
+          <rect x="480" y="14" width="76" height="34" rx="9" fill="#EFE9D8"/><text x="518" y="36">膀胱過動</text>
+          <rect x="228" y="58" width="76" height="34" rx="9" fill="#EFE9D8"/><text x="266" y="80">便秘</text>
+          <rect x="312" y="58" width="76" height="34" rx="9" fill="#EFE9D8"/><text x="350" y="80">藥物</text>
+          <rect x="396" y="58" width="76" height="34" rx="9" fill="#EFE9D8"/><text x="434" y="80">血糖</text>
+          <rect x="480" y="58" width="76" height="34" rx="9" fill="#EFE9D8"/><text x="518" y="80">習慣心理</text>
+        </g>
+        <text x="394" y="126" text-anchor="middle" font-size="14" fill="#73683B" font-weight="700">8 種常見原因，大多可以處理 ↓ 對照下表</text>
+      </svg>
+    </div>
+
+    <table>
+      <tr><th style="width:31%">可能原因</th><th>觀察線索</th><th style="width:30%">第一步行動</th></tr>
+      <tr><td><b>喝太少水</b></td><td>尿色深、尿量少、一天喝不到 1,500 ml</td><td>逐步增加飲水（見 Q2）</td></tr>
+      <tr><td><b>泌尿道感染</b></td><td>突然變頻、尿急灼熱、尿混濁有異味；失智長輩常表現為「突然變得混亂躁動」</td><td>就醫驗尿</td></tr>
+      <tr><td><b>咖啡因與濃茶</b></td><td>頻尿集中在喝茶、咖啡後 1–2 小時</td><td>記錄飲品時間，改淡茶或上午喝</td></tr>
+      <tr><td><b>膀胱過動</b></td><td>突然強烈尿意、來不及到廁所</td><td>急尿煞車法（見 Q8）</td></tr>
+      <tr><td><b>便秘</b></td><td>3 天以上沒排便＋頻尿同時出現（糞便壓迫膀胱）</td><td>先處理便秘（見 Q7）</td></tr>
+      <tr><td><b>藥物影響</b></td><td>吃利尿劑、排糖藥後 2–4 小時明顯多尿</td><td>與醫師討論服藥時段</td></tr>
+      <tr><td><b>血糖過高</b></td><td>多尿＋一直口渴＋體重下降</td><td>驗血糖</td></tr>
+      <tr><td><b>習慣與心理</b></td><td>睡前大量喝水；或「怕來不及」的以防萬一心態</td><td>用 3 天如廁紀錄釐清（見 Q9 後附表）</td></tr>
+    </table>
+    <div class="tip"><b>給照顧者的提醒：</b>失智長輩「突然」變得很頻尿或很混亂，第一個要排除的是泌尿道感染，不是「病情惡化」。很多家庭在這裡繞了遠路。</div>
+  </section>
+
+  <div class="divider">・・・</div>
+
+  <!-- Q2 -->
+  <section id="q2">
+    <div class="qhead">
+      <div class="qnum">Q2</div>
+      <h2>怕他一直尿，可以少給他喝水嗎？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>「他都會尿褲子，我想說水少喝一點，尿就少一點……」</div>
+    <p class="ans-first">✦ 一句話答案：千萬不要。少喝水不會解決失禁，反而讓長輩更容易感染、更頻尿。</p>
+
+    <!-- 圖解：惡性循環 -->
+    <div class="fig">
+      <svg width="520" height="240" viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="少喝水的惡性循環圖">
+        <defs>
+          <marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0 0 L9 4.5 L0 9 Z" fill="#73683B"/>
+          </marker>
+        </defs>
+        <g font-size="15" font-weight="700" text-anchor="middle">
+          <rect x="30" y="90" width="104" height="52" rx="12" fill="#583E23"/>
+          <text x="82" y="112" fill="#fff">喝太少</text>
+          <text x="82" y="131" fill="#E9E6FF" font-size="12">＆半杯水人生</text>
+
+          <rect x="164" y="90" width="104" height="52" rx="12" fill="#EFE9D8"/>
+          <text x="216" y="121" fill="#13262F">尿量變少</text>
+
+          <rect x="298" y="90" width="104" height="52" rx="12" fill="#EFE9D8"/>
+          <text x="350" y="112" fill="#13262F">沖刷細菌</text>
+          <text x="350" y="131" fill="#13262F">力量不夠</text>
+
+          <rect x="432" y="90" width="76" height="52" rx="12" fill="#B34A2E"/>
+          <text x="470" y="112" fill="#fff">感染</text>
+          <text x="470" y="131" fill="#FFE7DC" font-size="12">風險上升</text>
+        </g>
+        <!-- 細菌小怪 -->
+        <g>
+          <ellipse cx="455" cy="68" rx="9" ry="7" fill="#6B8E4E"/>
+          <circle cx="452" cy="66" r="1.6" fill="#fff"/>
+          <circle cx="458" cy="66" r="1.6" fill="#fff"/>
+          <g stroke="#6B8E4E" stroke-width="2" stroke-linecap="round">
+            <line x1="444" y1="63" x2="439" y2="59"/><line x1="446" y1="72" x2="440" y2="75"/>
+            <line x1="464" y1="62" x2="469" y2="58"/><line x1="464" y1="73" x2="470" y2="76"/>
+          </g>
+          <ellipse cx="486" cy="58" rx="6.5" ry="5" fill="#8FAE6B"/>
+          <circle cx="484" cy="57" r="1.3" fill="#fff"/>
+          <circle cx="489" cy="57" r="1.3" fill="#fff"/>
+          <g stroke="#8FAE6B" stroke-width="1.8" stroke-linecap="round">
+            <line x1="478" y1="55" x2="474" y2="52"/><line x1="493" y1="54" x2="497" y2="51"/>
+          </g>
+        </g>
+        <line x1="136" y1="116" x2="158" y2="116" stroke="#73683B" stroke-width="3.5" marker-end="url(#arw)"/>
+        <line x1="270" y1="116" x2="292" y2="116" stroke="#73683B" stroke-width="3.5" marker-end="url(#arw)"/>
+        <line x1="404" y1="116" x2="426" y2="116" stroke="#73683B" stroke-width="3.5" marker-end="url(#arw)"/>
+        <!-- 回圈：感染 → 更急更頻 → 更不敢喝 -->
+        <path d="M470 144 C470 205 250 205 96 150" fill="none" stroke="#B34A2E" stroke-width="3.5" stroke-dasharray="7 6" marker-end="url(#arw)"/>
+        <text x="285" y="222" text-anchor="middle" font-size="14.5" font-weight="800" fill="#B34A2E">感染本身造成急尿、頻尿 → 家人更不敢給水 → 惡性循環</text>
+        <text x="260" y="40" text-anchor="middle" font-size="16" font-weight="800" fill="#583E23">「少喝水」的惡性循環</text>
+      </svg>
+    </div>
+
+    <p>換句話說：<b>喝太少的問題，主要不是尿變濃刺激膀胱，而是尿量太少、沖刷不夠，泌尿道感染風險上升——而感染本身會造成急尿、頻尿。</b></p>
+    <div class="card">
+      <h3>研究怎麼說</h3>
+      <ul>
+        <li>一項發表於《JAMA Internal Medicine》的隨機對照試驗：原本每天喝不到 1.5 公升水的反覆膀胱炎女性，每天多喝 1.5 公升水之後，一年內<b>膀胱炎發作次數少了將近一半</b>（1.7 次 vs 3.2 次），抗生素使用也將近減半。</li>
+        <li>日本養護機構研究發現：整天包尿布的長輩，反而是喝水最少、吃得最少的一群——失禁的長輩<b>更需要</b>吃夠喝夠。</li>
+      </ul>
+    </div>
+    <ul class="steps">
+      <li><b>總量目標：</b>白天平均分配，一天約 1,500 ml（有心衰竭、腎臟病、醫師限水者除外——請依醫囑）。</li>
+      <li><b>時間策略：</b>水分集中在白天喝，睡前 2 小時減量——是「往前挪」，不是「減總量」。</li>
+      <li><b>搭配如廁方案：</b>研究顯示單純調整喝水量效果有限，喝水一定要搭配 Q5 的定時引導如廁，效果才會出來。</li>
+    </ul>
+    <p class="evidence">實證來源：Hooton et al. (2018), JAMA Internal Medicine；Kohno et al. (2023), The Journal of Medical Investigation；Buck et al. (2024), Age and Ageing。</p>
+  </section>
+
+  <div class="divider">・・・</div>
+
+  <!-- Q3 -->
+  <section id="q3">
+    <div class="qhead">
+      <div class="qnum">Q3</div>
+      <h2>常常來不及走到廁所就漏出來了，怎麼辦？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>阿公有感覺要尿，但從客廳走到廁所要一分多鐘，常常走到一半就濕了。</div>
+    <p class="ans-first">✦ 一句話答案：這叫「功能性失禁」——膀胱沒壞，是「到達廁所的過程」出了問題。這是最有機會改善的一種失禁。</p>
+    <p>機構研究顯示，功能性失禁是長輩失禁中<b>最常見的類型（約占 45%）</b>。改善方向有三條路，可以同時進行：</p>
+
+    <!-- 圖解：從床到廁所的發光小路 -->
+    <div class="fig">
+      <svg width="540" height="170" viewBox="0 0 540 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="從床到廁所：移除障礙、加裝夜燈與扶手">
+        <!-- 床 -->
+        <rect x="24" y="52" width="96" height="62" rx="10" fill="#B0A084"/>
+        <rect x="24" y="44" width="96" height="20" rx="8" fill="#583E23"/>
+        <circle cx="44" cy="54" r="9" fill="#F4EFE3"/>
+        <text x="72" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#583E23">床</text>
+        <!-- 發光路徑 -->
+        <path d="M130 86 C 210 86 240 86 300 86 C 360 86 380 86 420 86" fill="none" stroke="#73683B" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+        <!-- 夜燈光點 -->
+        <g fill="#E8C766">
+          <circle cx="180" cy="86" r="7"/>
+          <circle cx="260" cy="86" r="7"/>
+          <circle cx="340" cy="86" r="7"/>
+        </g>
+        <g stroke="#E8C766" stroke-width="1.6" opacity=".75">
+          <line x1="180" y1="70" x2="180" y2="62"/><line x1="168" y1="76" x2="162" y2="70"/><line x1="192" y1="76" x2="198" y2="70"/>
+          <line x1="260" y1="70" x2="260" y2="62"/><line x1="248" y1="76" x2="242" y2="70"/><line x1="272" y1="76" x2="278" y2="70"/>
+          <line x1="340" y1="70" x2="340" y2="62"/><line x1="328" y1="76" x2="322" y2="70"/><line x1="352" y1="76" x2="358" y2="70"/>
+        </g>
+        <!-- 走在小路上的長輩（拄拐杖） -->
+        <g stroke="#583E23" stroke-linecap="round">
+          <circle cx="298" cy="46" r="8" fill="#FAF6EE" stroke-width="3.4"/>
+          <circle cx="295.5" cy="44.5" r="1.2" fill="#583E23" stroke="none"/>
+          <circle cx="300.5" cy="44.5" r="1.2" fill="#583E23" stroke="none"/>
+          <path d="M295 50 q3 2.4 6 0" fill="none" stroke-width="1.6"/>
+          <line x1="298" y1="54" x2="298" y2="70" stroke-width="3.6"/>
+          <line x1="298" y1="70" x2="290" y2="84" stroke-width="3.6"/>
+          <line x1="298" y1="70" x2="306" y2="84" stroke-width="3.6"/>
+          <line x1="298" y1="60" x2="309" y2="67" stroke-width="3.2"/>
+          <line x1="309" y1="67" x2="312" y2="84" stroke-width="2.6"/>
+        </g>
+        <text x="260" y="116" text-anchor="middle" font-size="13" fill="#73683B" font-weight="700">感應夜燈・淨空動線・沿路扶手</text>
+        <!-- 廁所 -->
+        <rect x="428" y="40" width="88" height="86" rx="12" fill="none" stroke="#583E23" stroke-width="3.5"/>
+        <rect x="452" y="56" width="26" height="10" rx="4" fill="#73683B"/>
+        <path d="M448 66 L482 66 L478 84 C477 89 471 92 465 92 C459 92 453 89 452 84 Z" fill="#73683B"/>
+        <text x="472" y="115" text-anchor="middle" font-size="14" font-weight="700" fill="#583E23">廁所</text>
+        <text x="270" y="158" text-anchor="middle" font-size="14.5" font-weight="800" fill="#583E23">目標：讓「路程」變短、變亮、變好走</text>
+      </svg>
+    </div>
+
+    <div class="card">
+      <h3>① 縮短「路程」</h3>
+      <ul>
+        <li>移除動線上的障礙物、加裝夜燈與扶手</li>
+        <li>房間離廁所太遠時，夜間在床邊放<b>便盆椅</b>（日間仍鼓勵走去廁所，維持活動量）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>② 縮短「穿脫時間」</h3>
+      <ul>
+        <li>改穿鬆緊帶褲頭，避免皮帶、排扣</li>
+        <li>裙裝、寬鬆棉褲都是好選擇</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>③ 提前出發：改用「他的時間表」帶他去</h3>
+      <ul>
+        <li>記錄 3 天排尿時間，找出長輩自己的排尿規律（例如：早餐後 30 分鐘、午睡醒來）</li>
+        <li>在他慣性時間<b>之前</b>就主動帶去廁所——研究顯示這種「個人化時間表」比齊頭式的「每 2 小時帶一次」更有效，漏尿量可減少約四到五成</li>
+      </ul>
+    </div>
+
+    <div class="vidbox">
+      <h3>📺 影片參考（日文影片，重點已幫你整理成中文）</h3>
+      <a class="vid" href="https://www.youtube.com/watch?v=rk0A8H0PPj8" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">站不起來的長輩怎麼上廁所？如廁移位＋穿脫褲全示範（13 分 10 秒）</span>
+          <span class="vsrc">YouTube・やしのき介護技術頻道（日本物理治療師示範，16 萬次觀看）</span>
+          <span class="vurl">https://www.youtube.com/watch?v=rk0A8H0PPj8</span>
+        </span>
+      </a>
+      <div class="card">
+        <h3>看不懂日文沒關係——影片重點中文摘要</h3>
+        <ul>
+          <li><b>這部影片解決什麼？</b>雙腳無力、站不太起來的長輩，要上馬桶／便盆椅時的「移位＋穿脫褲子尿布」——原本要兩個人的工作，教你<b>一個人</b>安全完成（最適合居家照顧與狹小廁所）。</li>
+          <li><b>核心手法「膝蓋支點」：</b>協助者蹲低（或單膝跪地），<b>一手掌心從上方壓穩長輩「靠馬桶那一側」的膝蓋</b>當支點；讓長輩雙手環抱你的肩背，順勢帶他半站起——這時你的另一手就空出來，拉下（或拉上）褲子與尿布，再轉身慢慢坐上便座。</li>
+          <li><b>長輩的手擺哪裡很重要：</b>要搭在你「<b>肩膀與脖子之間</b>」，不要壓在心窩（胸口正中央）——會痛，甚至可能引發嘔吐。</li>
+          <li><b>照顧者的護腰關鍵：</b>雙腳打開、彎膝蓋與髖關節「蹲低」，不是彎腰；「掌心壓膝」這個支點沒做好，長輩的重量會全部壓到你的腰上。</li>
+          <li><b>不用一次到位：</b>褲子沒拉好，讓長輩坐回去、再站一次就好；兩人身高體格差太多時不要硬做，找第二人協助或改用別的方法。</li>
+          <li><b>適用範圍提醒：</b>此法適合「腳還有一點力氣」的長輩；完全無法出力或體重過重者，影片建議改在床上處理，安全第一。</li>
+        </ul>
+      </div>
+      <a class="vid" href="https://www.youtube.com/watch?v=M8OLl2xpWiM" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">包大人提拉密舒健康操（20 分鐘全身肌耐力操）——走得穩、站得起來，是自己上廁所的本錢</span>
+          <span class="vsrc">YouTube・Dr.P 包大人｜帶長輩每天跟著做，記得保持呼吸、盡量伸展</span>
+          <span class="vurl">https://www.youtube.com/watch?v=M8OLl2xpWiM</span>
+        </span>
+      </a>
+    </div>
+    <p class="evidence">實證來源：Jerez-Roig et al. (2024), BMC Geriatrics（功能性失禁盛行率）；Colling et al. (2003)，引自 Buck et al. (2024), Age and Ageing（個人化排尿模式訓練）。</p>
+  </section>
+
+  <div class="divider">・・・</div>
+
+  <!-- Q4 -->
+  <section id="q4">
+    <div class="qhead">
+      <div class="qnum">Q4</div>
+      <h2>失智長輩找不到廁所、甚至拒絕進廁所，怎麼辦？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>阿嬤在家裡走來走去就是找不到廁所，最後尿在陽台；帶她進浴室她卻大力反抗。</div>
+    <p class="ans-first">✦ 一句話答案：先問「他為什麼做不到／不願意」，再對症處理——事出必有因。</p>
+
+    <!-- 圖解：門口大標示 -->
+    <div class="fig">
+      <svg width="480" height="200" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="廁所門上貼大字加圖案標示">
+        <!-- 門 -->
+        <rect x="60" y="18" width="130" height="170" rx="8" fill="#B0A084"/>
+        <circle cx="176" cy="106" r="6" fill="#583E23"/>
+        <!-- 門上標示牌 -->
+        <rect x="78" y="42" width="94" height="86" rx="10" fill="#FAF6EE" stroke="#583E23" stroke-width="3"/>
+        <rect x="100" y="54" width="22" height="8" rx="3" fill="#73683B"/>
+        <path d="M96 64 L126 64 L123 80 C122 84 118 87 111 87 C104 87 100 84 99 80 Z" fill="#73683B"/>
+        <text x="125" y="116" text-anchor="middle" font-size="22" font-weight="800" fill="#583E23">廁所</text>
+        <!-- 要點 -->
+        <g font-size="14.5" fill="#13262F" font-weight="600">
+          <circle cx="234" cy="60" r="4.5" fill="#73683B"/><text x="248" y="65">大字＋圖案，貼在視線高度</text>
+          <circle cx="234" cy="98" r="4.5" fill="#73683B"/><text x="248" y="103">門常開、燈常亮，讓馬桶被看見</text>
+          <circle cx="234" cy="136" r="4.5" fill="#73683B"/><text x="248" y="141">夜間感應燈鋪一條「發光的路」</text>
+        </g>
+        <text x="240" y="182" text-anchor="middle" font-size="14.5" font-weight="800" fill="#583E23">看得見，才想得起來</text>
+      </svg>
+    </div>
+
+    <div class="card">
+      <h3>說不出「我要上廁所」→ 用圖卡代替語言</h3>
+      <ul>
+        <li>依失智程度選擇溝通方式：輕度用<b>多選一</b>圖卡、中度用<b>二選一</b>（大號／小便圖卡）、重度用<b>是非題</b>（拿一張圖卡問「要不要？」）</li>
+        <li>照顧者主動出示圖卡詢問，不要等長輩開口</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>拒絕、反抗 → 當偵探找原因</h3>
+      <ul>
+        <li>常見原因：怕水聲、鏡子裡的「陌生人」、浴室太冷、曾在廁所跌倒的恐懼、隱私被侵犯的感受</li>
+        <li>處理方向：蓋住鏡子、先開暖風再進去、改變協助的口氣與順序（「陪你去洗手」比「帶你去尿尿」容易被接受）</li>
+        <li>原則：<b>把注意力放在處理原因，而不是壓制行為</b></li>
+      </ul>
+    </div>
+    <div class="tip"><b>照顧金句：</b>他不是故意作對——是這個環境對他來說變得太難懂了。我們改環境，比要求他「配合」有效得多。</div>
+
+    <div class="vidbox">
+      <h3>📺 影片參考</h3>
+      <a class="vid" href="https://www.youtube.com/watch?v=dECRAFXGvUY" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">專家來解泌｜失智照護一把罩！讓長輩不「濕」尊嚴</span>
+          <span class="vsrc">YouTube・泌尿專科衛教頻道</span>
+          <span class="vurl">https://www.youtube.com/watch?v=dECRAFXGvUY</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider">・・・</div>
+
+  <!-- Q5 -->
+  <section id="q5">
+    <div class="qhead">
+      <div class="qnum">Q5</div>
+      <h2>已經包尿布了，還有機會脫離尿布嗎？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>出院後怕來不及，就直接包尿布了。半年過去，全家都以為「回不去了」。</div>
+    <p class="ans-first">✦ 一句話答案：很有機會。日本研究：實行「定時詢問＋立即引導」11 個月，尿布使用率從 71% 降到 47%——而且完全不用限制喝水。</p>
+    <div class="card">
+      <h3>先看兩個會讓你意外的數字（日本調查）</h3>
+      <ul>
+        <li>包尿布的長輩中，約 <b>1/3 其實只要有人協助，就能自己上廁所</b></li>
+        <li>約 <b>24% 的尿布是「以防萬一」包的</b>——不是真的需要</li>
+      </ul>
+    </div>
+
+    <!-- 圖解：問帶讚循環 -->
+    <div class="fig">
+      <svg width="480" height="252" viewBox="0 0 480 252" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="零尿布計畫循環：每2至3小時，問、帶、讚">
+        <defs>
+          <marker id="arw2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0 0 L9 4.5 L0 9 Z" fill="#73683B"/>
+          </marker>
+        </defs>
+        <!-- 中心時鐘 -->
+        <circle cx="240" cy="130" r="46" fill="#FAF6EE" stroke="#583E23" stroke-width="4"/>
+        <line x1="240" y1="130" x2="240" y2="102" stroke="#583E23" stroke-width="4" stroke-linecap="round"/>
+        <line x1="240" y1="130" x2="262" y2="142" stroke="#583E23" stroke-width="4" stroke-linecap="round"/>
+        <text x="240" y="200" text-anchor="middle" font-size="15" font-weight="800" fill="#583E23">每 2–3 小時一輪</text>
+        <!-- 三節點 -->
+        <g text-anchor="middle">
+          <circle cx="240" cy="34" r="27" fill="#73683B"/>
+          <text x="240" y="41" font-size="17" font-weight="800" fill="#fff">問</text>
+          <text x="323" y="34" font-size="13" fill="#583E23" font-weight="600">「要不要去上廁所？」</text>
+
+          <circle cx="108" cy="196" r="27" fill="#73683B"/>
+          <text x="108" y="203" font-size="17" font-weight="800" fill="#fff">帶</text>
+          <text x="108" y="242" font-size="13" fill="#583E23" font-weight="600">說要就立刻帶，不延遲</text>
+
+          <circle cx="372" cy="196" r="27" fill="#73683B"/>
+          <text x="372" y="203" font-size="17" font-weight="800" fill="#fff">讚</text>
+          <path d="M408 164 L410.4 170.6 L417 173 L410.4 175.4 L408 182 L405.6 175.4 L399 173 L405.6 170.6 Z" fill="#E8C766"/>
+          <path d="M416 190 L417.6 194.4 L422 196 L417.6 197.6 L416 202 L414.4 197.6 L410 196 L414.4 194.4 Z" fill="#E8C766"/>
+          <text x="372" y="242" font-size="13" fill="#583E23" font-weight="600">乾爽、成功都具體稱讚</text>
+        </g>
+        <!-- 弧形箭頭 -->
+        <path d="M212 42 C 150 62 110 120 104 166" fill="none" stroke="#73683B" stroke-width="3.5" marker-end="url(#arw2)"/>
+        <path d="M136 202 C 190 224 290 224 344 202" fill="none" stroke="#73683B" stroke-width="3.5" marker-end="url(#arw2)"/>
+        <path d="M376 168 C 372 118 330 62 270 40" fill="none" stroke="#73683B" stroke-width="3.5" marker-end="url(#arw2)"/>
+      </svg>
+      <div class="figcap">「讚」是最常被漏掉、卻最關鍵的一步——成功如廁與保持乾爽時，具體地稱讚他。</div>
+    </div>
+
+    <p>日本養護機構的「零尿布計畫」做法非常簡單，家裡也能做：</p>
+    <ul class="steps">
+      <li><b>每 2–3 小時固定詢問一次：</b>「要不要去上廁所？」——語氣像聊天，不是命令。</li>
+      <li><b>說「要」就立刻帶去</b>，不延遲、不說「再等一下」。</li>
+      <li><b>說「不要」就尊重</b>，下一輪再問；不會說話的長輩，觀察坐立不安、拉褲子等訊號。</li>
+      <li><b>排程以外的時間，只要表達尿意一律協助</b>——時間表是主動出擊的底線，不是拒絕的理由。</li>
+      <li><b>走不到廁所 ≠ 包尿布：</b>用輪椅、便盆椅協助移位，讓他保有「坐在馬桶上」的尊嚴。</li>
+      <li><b>全程正常吃、正常喝</b>，並在成功如廁、保持乾爽時<b>具體稱讚</b>（「今天都乾乾的，真棒！」）。</li>
+    </ul>
+    <div class="tip"><b>務實的期待：</b>研究顯示約 3–4 成長輩對這個方法反應特別好（失禁從一天近 4 次降到 1 次以下）。先試 2–4 週，觀察你家長輩是不是「高反應者」；就算不能完全脫離，從「整天包」退到「只有夜間包」，對皮膚、尊嚴、照顧負擔都是大進步。</div>
+
+    <div class="vidbox">
+      <h3>📺 影片參考</h3>
+      <a class="vid" href="https://www.youtube.com/watch?v=1Y30XcoGgxs" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">離床如廁篇：穿脫紙尿褲同時復健——適度讓長輩自己來</span>
+          <span class="vsrc">YouTube・包大人長照小學堂（治療師示範）</span>
+          <span class="vurl">https://www.youtube.com/watch?v=1Y30XcoGgxs</span>
+        </span>
+      </a>
+      <a class="vid" href="https://www.youtube.com/watch?v=D_B1XCWqUmw" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">失禁一定要穿紙尿褲嗎？讓長輩自信又「敢動」的照護技巧</span>
+          <span class="vsrc">YouTube・udn 元氣網 × TENA（本手冊作者 施昱廷 職能治療師 參與講解）</span>
+          <span class="vurl">https://www.youtube.com/watch?v=D_B1XCWqUmw</span>
+        </span>
+      </a>
+    </div>
+    <p class="evidence">實證來源：Kohno et al. (2023), The Journal of Medical Investigation；Engberg et al. (2002) 與 Newman (2019) 之引導如廁（prompted voiding）實證。</p>
+  </section>
+
+  <div class="divider">・・・</div>
+
+  <!-- Q6 -->
+  <section id="q6">
+    <div class="qhead">
+      <div class="qnum">Q6</div>
+      <h2>半夜一直起來上廁所，全家都睡不好，怎麼辦？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>阿公一個晚上起來 4 次，白天精神差，家人也被吵醒，還擔心他半夜跌倒。</div>
+    <p class="ans-first">✦ 一句話答案：夜尿的處理原則是「水分往白天挪、藥物時間問醫師、動線做到防跌」。</p>
+
+    <!-- 圖解：喝水時間軸 -->
+    <div class="fig">
+      <svg width="540" height="210" viewBox="0 0 540 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="水分往白天挪：早上到下午正常喝，睡前兩小時減量">
+        <!-- 太陽與月亮 -->
+        <circle cx="120" cy="40" r="18" fill="#E8C766"/>
+        <circle cx="114" cy="36" r="2" fill="#583E23"/>
+        <circle cx="126" cy="36" r="2" fill="#583E23"/>
+        <path d="M112 45 q8 6 16 0" fill="none" stroke="#583E23" stroke-width="2.2" stroke-linecap="round"/>
+        <g stroke="#E8C766" stroke-width="3" stroke-linecap="round">
+          <line x1="120" y1="12" x2="120" y2="20"/><line x1="120" y1="60" x2="120" y2="68"/>
+          <line x1="92" y1="40" x2="100" y2="40"/><line x1="140" y1="40" x2="148" y2="40"/>
+        </g>
+        <path d="M448 26 A 20 20 0 1 0 462 60 A 16 16 0 0 1 448 26 Z" fill="#B0A084"/>
+        <text x="474" y="36" font-size="15" font-weight="800" fill="#B0A084">z</text>
+        <text x="484" y="26" font-size="11" font-weight="800" fill="#B0A084">z</text>
+        <!-- 水杯們 -->
+        <g>
+          <!-- 杯子函數：外框 + 水位 -->
+          <g transform="translate(70,96)">
+            <rect x="0" y="0" width="34" height="52" rx="6" fill="none" stroke="#583E23" stroke-width="3"/>
+            <rect x="4" y="10" width="26" height="38" rx="4" fill="#7FA8C9"/>
+            <text x="17" y="72" text-anchor="middle" font-size="12.5" fill="#583E23" font-weight="700">早</text>
+          </g>
+          <g transform="translate(150,96)">
+            <rect x="0" y="0" width="34" height="52" rx="6" fill="none" stroke="#583E23" stroke-width="3"/>
+            <rect x="4" y="10" width="26" height="38" rx="4" fill="#7FA8C9"/>
+            <text x="17" y="72" text-anchor="middle" font-size="12.5" fill="#583E23" font-weight="700">上午</text>
+          </g>
+          <g transform="translate(230,96)">
+            <rect x="0" y="0" width="34" height="52" rx="6" fill="none" stroke="#583E23" stroke-width="3"/>
+            <rect x="4" y="14" width="26" height="34" rx="4" fill="#7FA8C9"/>
+            <text x="17" y="72" text-anchor="middle" font-size="12.5" fill="#583E23" font-weight="700">中午</text>
+          </g>
+          <g transform="translate(310,96)">
+            <rect x="0" y="0" width="34" height="52" rx="6" fill="none" stroke="#583E23" stroke-width="3"/>
+            <rect x="4" y="20" width="26" height="28" rx="4" fill="#7FA8C9"/>
+            <text x="17" y="72" text-anchor="middle" font-size="12.5" fill="#583E23" font-weight="700">下午</text>
+          </g>
+          <g transform="translate(390,96)">
+            <rect x="0" y="0" width="34" height="52" rx="6" fill="none" stroke="#583E23" stroke-width="3"/>
+            <rect x="4" y="36" width="26" height="12" rx="4" fill="#7FA8C9"/>
+            <text x="17" y="72" text-anchor="middle" font-size="12.5" fill="#583E23" font-weight="700">晚餐</text>
+          </g>
+          <g transform="translate(470,96)">
+            <rect x="0" y="0" width="34" height="52" rx="6" fill="none" stroke="#583E23" stroke-width="3"/>
+            <text x="17" y="34" text-anchor="middle" font-size="16" font-weight="800" fill="#B34A2E">✕</text>
+            <text x="17" y="72" text-anchor="middle" font-size="12.5" fill="#583E23" font-weight="700">睡前2hr</text>
+          </g>
+        </g>
+        <text x="270" y="196" text-anchor="middle" font-size="14.5" font-weight="800" fill="#583E23">總量不變（約 1,500 ml），把水「往前挪」，不是「減量」</text>
+      </svg>
+    </div>
+
+    <div class="card">
+      <h3>三管齊下</h3>
+      <ol>
+        <li><b>水分往前挪：</b>白天正常喝、睡前 2 小時開始減量；晚餐的湯與水果適量即可（見 Q2）。</li>
+        <li><b>檢視藥物時間：</b>利尿劑若在傍晚吃，夜尿一定多——請帶著藥單與醫師討論能否改到早上。</li>
+        <li><b>夜間安全動線：</b>感應夜燈、移除地毯與電線、必要時床邊放便盆椅。<b>半夜跌倒的代價，遠大於一次床邊如廁的不便。</b></li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>進階觀察</h3>
+      <ul>
+        <li>睡前雙腳水腫明顯的長輩：白天累積在下肢的水分，躺平後回流變成尿——傍晚可穿彈性襪或抬腿 30 分鐘，讓水分提早代謝。</li>
+        <li>夜尿伴隨打鼾與白天嗜睡：可能與睡眠呼吸中止有關，值得就醫評估。</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider">・・・</div>
+
+  <!-- Q7 -->
+  <section id="q7">
+    <div class="qhead">
+      <div class="qnum">Q7</div>
+      <h2>長輩排便好困難，需要買腳凳嗎？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>網路上都說墊腳凳模擬蹲姿比較好排便，要不要買一個？</div>
+    <p class="ans-first">✦ 一句話答案：腳凳不是必需品。有實證的姿勢重點是「身體前傾＋手撐膝蓋」，腳凳可以試，但別期待它是解答。</p>
+
+    <!-- 圖解：排便姿勢對比（三格） -->
+    <div class="fig">
+      <svg width="560" height="330" viewBox="0 0 560 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="排便姿勢比較：直挺挺坐效果差；前傾加手肘撐膝、或前傾雙手撐桌板較佳">
+        <!-- ===== 格1：直挺挺（✕） ===== -->
+        <g>
+          <rect x="8" y="24" width="176" height="262" rx="14" fill="#FAF6EE"/>
+          <line x1="22" y1="252" x2="170" y2="252" stroke="#B0A084" stroke-width="3"/>
+          <!-- 馬桶 -->
+          <rect x="136" y="152" width="22" height="48" rx="5" fill="#B0A084"/>
+          <rect x="90" y="190" width="58" height="13" rx="6" fill="#B0A084"/>
+          <path d="M98 203 L142 203 L136 246 C 134 250 104 250 104 246 Z" fill="#B0A084"/>
+          <!-- 人：直挺挺、表情吃力 -->
+          <circle cx="108" cy="104" r="15" fill="#FAF6EE" stroke="#583E23" stroke-width="5"/>
+          <circle cx="103" cy="101" r="1.8" fill="#583E23"/>
+          <circle cx="113" cy="101" r="1.8" fill="#583E23"/>
+          <path d="M102 111 l4 -3 l4 3 l4 -3" fill="none" stroke="#583E23" stroke-width="2" stroke-linecap="round"/>
+          <!-- 汗滴 -->
+          <path d="M130 88 q5 8 0 11 q-5 -3 0 -11" fill="#7FA8C9"/>
+          <path d="M138 100 q4 6 0 9 q-4 -2 0 -9" fill="#7FA8C9"/>
+          <!-- 身體 -->
+          <line x1="108" y1="119" x2="108" y2="192" stroke="#583E23" stroke-width="6" stroke-linecap="round"/>
+          <line x1="108" y1="134" x2="84" y2="172" stroke="#583E23" stroke-width="5" stroke-linecap="round"/>
+          <line x1="108" y1="192" x2="68" y2="196" stroke="#583E23" stroke-width="6" stroke-linecap="round"/>
+          <line x1="68" y1="196" x2="68" y2="246" stroke="#583E23" stroke-width="6" stroke-linecap="round"/>
+          <line x1="68" y1="246" x2="52" y2="246" stroke="#583E23" stroke-width="6" stroke-linecap="round"/>
+          <text x="96" y="274" text-anchor="middle" font-size="14.5" font-weight="800" fill="#B34A2E">✕ 直挺挺坐</text>
+        </g>
+        <!-- ===== 格2：前傾＋手肘撐膝（✓） ===== -->
+        <g>
+          <rect x="192" y="24" width="176" height="262" rx="14" fill="#FAF6EE"/>
+          <line x1="206" y1="252" x2="354" y2="252" stroke="#B0A084" stroke-width="3"/>
+          <!-- 馬桶 -->
+          <rect x="320" y="152" width="22" height="48" rx="5" fill="#B0A084"/>
+          <rect x="274" y="190" width="58" height="13" rx="6" fill="#B0A084"/>
+          <path d="M282 203 L326 203 L320 246 C 318 250 288 250 288 246 Z" fill="#B0A084"/>
+          <!-- 人：前傾、微笑 -->
+          <circle cx="256" cy="122" r="15" fill="#FAF6EE" stroke="#2F5D3A" stroke-width="5"/>
+          <circle cx="251" cy="119" r="1.8" fill="#2F5D3A"/>
+          <circle cx="261" cy="119" r="1.8" fill="#2F5D3A"/>
+          <path d="M250 127 q6 5 12 0" fill="none" stroke="#2F5D3A" stroke-width="2" stroke-linecap="round"/>
+          <!-- 身體：肩(262,136)→髖(296,192) -->
+          <line x1="262" y1="136" x2="296" y2="192" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"/>
+          <!-- 手肘撐膝 -->
+          <path d="M266 142 L248 170 L256 186" fill="none" stroke="#2F5D3A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- 腿 -->
+          <line x1="296" y1="192" x2="256" y2="196" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"/>
+          <line x1="256" y1="196" x2="256" y2="246" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"/>
+          <line x1="256" y1="246" x2="240" y2="246" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"/>
+          <!-- 腹壓箭頭 -->
+          <line x1="284" y1="160" x2="290" y2="178" stroke="#B34A2E" stroke-width="3" stroke-linecap="round"/>
+          <path d="M285 176 L291 182 L293 173 Z" fill="#B34A2E"/>
+          <text x="308" y="168" font-size="11.5" font-weight="800" fill="#B34A2E">腹壓</text>
+          <text x="280" y="274" text-anchor="middle" font-size="14.5" font-weight="800" fill="#2F5D3A">✓ 前傾＋手肘撐膝</text>
+        </g>
+        <!-- ===== 格3：前傾＋雙手撐桌板（✓） ===== -->
+        <g>
+          <rect x="376" y="24" width="176" height="262" rx="14" fill="#FAF6EE"/>
+          <line x1="390" y1="252" x2="538" y2="252" stroke="#B0A084" stroke-width="3"/>
+          <!-- 馬桶 -->
+          <rect x="504" y="152" width="22" height="48" rx="5" fill="#B0A084"/>
+          <rect x="458" y="190" width="58" height="13" rx="6" fill="#B0A084"/>
+          <path d="M466 203 L510 203 L504 246 C 502 250 472 250 472 246 Z" fill="#B0A084"/>
+          <!-- 桌板 -->
+          <rect x="386" y="156" width="52" height="9" rx="3" fill="#73683B"/>
+          <line x1="393" y1="165" x2="393" y2="250" stroke="#73683B" stroke-width="5" stroke-linecap="round"/>
+          <line x1="430" y1="165" x2="430" y2="250" stroke="#73683B" stroke-width="5" stroke-linecap="round"/>
+          <text x="412" y="148" text-anchor="middle" font-size="11.5" font-weight="800" fill="#73683B">桌板</text>
+          <!-- 人：前傾、雙手撐桌板、微笑 -->
+          <circle cx="446" cy="120" r="15" fill="#FAF6EE" stroke="#2F5D3A" stroke-width="5"/>
+          <circle cx="441" cy="117" r="1.8" fill="#2F5D3A"/>
+          <circle cx="451" cy="117" r="1.8" fill="#2F5D3A"/>
+          <path d="M440 125 q6 5 12 0" fill="none" stroke="#2F5D3A" stroke-width="2" stroke-linecap="round"/>
+          <!-- 身體：肩(452,134)→髖(482,192) -->
+          <line x1="452" y1="134" x2="482" y2="192" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"/>
+          <!-- 雙手撐桌板 -->
+          <line x1="456" y1="140" x2="416" y2="156" stroke="#2F5D3A" stroke-width="5" stroke-linecap="round"/>
+          <line x1="456" y1="142" x2="426" y2="156" stroke="#2F5D3A" stroke-width="5" stroke-linecap="round"/>
+          <!-- 腿 -->
+          <line x1="482" y1="192" x2="446" y2="196" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"/>
+          <line x1="446" y1="196" x2="446" y2="246" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"/>
+          <line x1="446" y1="246" x2="432" y2="246" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"/>
+          <text x="464" y="274" text-anchor="middle" font-size="14.5" font-weight="800" fill="#2F5D3A">✓ 前傾＋雙手撐桌板</text>
+        </g>
+        <text x="280" y="308" text-anchor="middle" font-size="13.5" font-weight="700" fill="#583E23">重點是「前傾＋上肢有支撐」，雙腳踩實 → 肺活量與腹壓較大</text>
+        <text x="280" y="326" text-anchor="middle" font-size="12" fill="#8a816d">（Tashiro et al., 2020；行動不便者可用床邊桌、輪椅桌板）</text>
+      </svg>
+    </div>
+
+    <div class="card">
+      <h3>研究其實這麼說</h3>
+      <ul>
+        <li>健康年輕人的自我記錄研究：用腳凳「感覺」排得比較乾淨、比較不用力。</li>
+        <li>但針對<b>便秘患者</b>的隨機對照試驗發現：腳凳確實讓髖部角度變得更蹲姿，<b>可是實際的排出時間、成功率、順暢感通通沒有改善</b>。</li>
+        <li>真正有生理實證的是：<b>身體前傾、上肢有支撐</b>（手肘撐在膝蓋上，或前方放小桌板讓手撐著）——這個姿勢能產生較大的肺活量與腹壓，而腹壓才是排便的關鍵動力。</li>
+      </ul>
+    </div>
+    <ul class="steps">
+      <li><b>第一優先——姿勢：</b>坐穩馬桶 → 身體前傾 → 手肘撐膝（或撐桌板）→ 雙腳踩實地面。</li>
+      <li><b>第二優先——時機：</b>把握飯後 30 分鐘的「胃結腸反射」，尤其早餐後，固定去坐 5–10 分鐘。</li>
+      <li><b>基本盤：</b>水喝夠（見 Q2）、纖維吃夠、白天多活動——便秘處理好，Q1 的頻尿常常也跟著改善。</li>
+      <li><b>腳凳？</b>想試就試 2 週：主觀有改善就留著；沒感覺就收起來，不必勉強。衰弱長輩要注意腳凳可能增加起身時絆倒的風險。</li>
+    </ul>
+
+    <div class="vidbox">
+      <h3>📺 影片參考</h3>
+      <a class="vid" href="https://www.youtube.com/watch?v=9R7dZs1qYGQ" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">分辨失智長輩是否便秘與促進排便技巧</span>
+          <span class="vsrc">YouTube 照護課程影片</span>
+          <span class="vurl">https://www.youtube.com/watch?v=9R7dZs1qYGQ</span>
+        </span>
+      </a>
+      <a class="vid" href="https://www.youtube.com/watch?v=r_imEUbgz_w" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">五分鐘腹部運動，促進排便順暢</span>
+          <span class="vsrc">YouTube・王柏堯 職能治療師（癌症希望基金會）</span>
+          <span class="vurl">https://www.youtube.com/watch?v=r_imEUbgz_w</span>
+        </span>
+      </a>
+    </div>
+    <p class="evidence">實證來源：Tashiro et al. (2020), Journal of Physical Therapy Science（上肢支撐姿勢）；Modi et al. (2019), Journal of Clinical Gastroenterology（健康人自我報告）；Trieu et al. (2023), Neurogastroenterology &amp; Motility（便秘患者腳凳 RCT）。</p>
+  </section>
+
+  <div class="divider">・・・</div>
+
+  <!-- Q8 -->
+  <section id="q8">
+    <div class="qhead">
+      <div class="qnum">Q8</div>
+      <h2>尿意一來就忍不住，有辦法「訓練」嗎？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>媽媽只要一有尿意就非衝廁所不可，出門都提心吊膽。她認知還不錯，想學方法。</div>
+    <p class="ans-first">✦ 一句話答案：有。認知功能還不錯的長輩，可以練「急尿煞車 5 步驟」＋「膀胱再訓練」，研究顯示失禁次數可減少五到七成。</p>
+
+    <!-- 圖解：急尿煞車五步驟 -->
+    <div class="fig">
+      <svg width="560" height="170" viewBox="0 0 560 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="急尿煞車五步驟圖示：停、呼吸、縮、轉移、從容走">
+        <defs>
+          <marker id="arw3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0 0 L8 4 L0 8 Z" fill="#B0A084"/>
+          </marker>
+        </defs>
+        <g text-anchor="middle">
+          <!-- 1 停：八角形 -->
+          <g transform="translate(56,58)">
+            <polygon points="-16,-38 16,-38 38,-16 38,16 16,38 -16,38 -38,16 -38,-16" fill="#B34A2E" transform="scale(.78)"/>
+            <text y="7" font-size="17" font-weight="800" fill="#fff">停</text>
+          </g>
+          <text x="56" y="130" font-size="13.5" font-weight="700" fill="#583E23">停下不動</text>
+          <text x="56" y="149" font-size="12" fill="#8a816d">別急著衝！</text>
+
+          <!-- 2 呼吸：波浪 -->
+          <g transform="translate(172,58)">
+            <circle r="30" fill="#73683B"/>
+            <path d="M-16,-6 C-10,-14 -4,-14 2,-6 C8,2 14,2 18,-6" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+            <path d="M-16,8 C-10,0 -4,0 2,8 C8,16 14,16 18,8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+          </g>
+          <text x="172" y="130" font-size="13.5" font-weight="700" fill="#583E23">慢呼吸 2–3 次</text>
+
+          <!-- 3 縮：向心箭頭 -->
+          <g transform="translate(288,58)">
+            <circle r="30" fill="#73683B"/>
+            <circle r="5" fill="#fff"/>
+            <g stroke="#fff" stroke-width="3.2" stroke-linecap="round">
+              <line x1="-20" y1="-20" x2="-9" y2="-9"/><line x1="20" y1="-20" x2="9" y2="-9"/>
+              <line x1="-20" y1="20" x2="-9" y2="9"/><line x1="20" y1="20" x2="9" y2="9"/>
+            </g>
+          </g>
+          <text x="288" y="130" font-size="13.5" font-weight="700" fill="#583E23">快縮骨盆底肌</text>
+          <text x="288" y="149" font-size="12" fill="#8a816d">5–6 下</text>
+
+          <!-- 4 轉移：思考泡泡 -->
+          <g transform="translate(404,58)">
+            <circle r="30" fill="#73683B"/>
+            <circle cx="2" cy="-4" r="13" fill="none" stroke="#fff" stroke-width="3"/>
+            <circle cx="-12" cy="12" r="5" fill="#fff"/>
+            <circle cx="-19" cy="20" r="2.6" fill="#fff"/>
+            <text x="2" y="1" font-size="11" font-weight="800" fill="#fff">100-7</text>
+          </g>
+          <text x="404" y="130" font-size="13.5" font-weight="700" fill="#583E23">轉移注意力</text>
+
+          <!-- 5 從容走 -->
+          <g transform="translate(514,58)">
+            <circle r="30" fill="#2F5D3A"/>
+            <circle cx="2" cy="-15" r="5.5" fill="#fff"/>
+            <line x1="2" y1="-9" x2="0" y2="6" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+            <line x1="0" y1="6" x2="-8" y2="20" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+            <line x1="0" y1="6" x2="9" y2="18" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+            <line x1="1" y1="-4" x2="11" y2="4" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+          </g>
+          <text x="514" y="130" font-size="13.5" font-weight="700" fill="#583E23">從容走去廁所</text>
+        </g>
+        <!-- 連接箭頭 -->
+        <g stroke="#B0A084" stroke-width="3">
+          <line x1="90" y1="58" x2="134" y2="58" marker-end="url(#arw3)"/>
+          <line x1="206" y1="58" x2="250" y2="58" marker-end="url(#arw3)"/>
+          <line x1="322" y1="58" x2="366" y2="58" marker-end="url(#arw3)"/>
+          <line x1="438" y1="58" x2="476" y2="58" marker-end="url(#arw3)"/>
+        </g>
+      </svg>
+      <div class="figcap">急尿當下越急著衝，越容易漏——先「煞車」，讓尿意退潮再走。</div>
+    </div>
+
+    <div class="card">
+      <h3>膀胱再訓練（拉長間隔用）</h3>
+      <ol>
+        <li>先記 3 天排尿日誌，看目前平均間隔多久（例如 1 小時）</li>
+        <li>以此為起點，每 1–2 週把間隔延長 15–30 分鐘</li>
+        <li>目標：3–4 小時上一次</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>骨盆底肌運動（基本功）</h3>
+      <ul>
+        <li>收縮 3–10 秒、放鬆同秒數，一回 10–15 下，一天 3 回</li>
+        <li>研究發現<b>每天做滿 30 下以上</b>的人效果最好——貴在持續，不在單次多用力</li>
+      </ul>
+    </div>
+    <div class="tip"><b>不處理會怎樣？</b>同一系列研究的對照組（不做任何訓練），24 個月後漏尿量惡化了 184%。失禁不會自己好，但確實可以練回來。</div>
+
+    <div class="vidbox">
+      <h3>📺 影片參考</h3>
+      <a class="vid" href="https://www.youtube.com/watch?v=iOTgeDF6On0" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">【骨盆底肌運動教學影片】熟練凱格爾，遠離尿失禁</span>
+          <span class="vsrc">YouTube・高雄市政府衛生局</span>
+          <span class="vurl">https://www.youtube.com/watch?v=iOTgeDF6On0</span>
+        </span>
+      </a>
+      <a class="vid" href="https://www.youtube.com/watch?v=QivWR2TGFQY" target="_blank" rel="noopener">
+        <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M1 1 L15 9 L1 17 Z" fill="#F4EFE3"/></svg></span>
+        <span class="vinfo">
+          <span class="vtitle">緊實骨盆底肌改善漏尿！物理治療師教你坐姿和站姿凱格爾運動（男女通用）</span>
+          <span class="vsrc">YouTube・米蔚健康生活（物理治療師示範）</span>
+          <span class="vurl">https://www.youtube.com/watch?v=QivWR2TGFQY</span>
+        </span>
+      </a>
+    </div>
+    <p class="evidence">實證來源：McDowell et al. (1999) 與 Dougherty et al. (2002)，引自 Buck et al. (2024), Age and Ageing 系統性回顧。</p>
+  </section>
+
+  <div class="divider">・・・</div>
+
+  <!-- Q9 -->
+  <section id="q9">
+    <div class="qhead">
+      <div class="qnum">Q9</div>
+      <h2>什麼狀況應該趕快就醫？</h2>
+    </div>
+    <div class="scene"><b>情境：</b>自己調整了一陣子，但不確定是不是該找醫師了。</div>
+    <p class="ans-first">✦ 一句話答案：以下任何一項出現，請直接就醫，不要再自行觀察。</p>
+    <div class="warn">
+      <b>就醫紅旗清單</b><br>
+      □ 尿中帶血、排尿疼痛或灼熱<br>
+      □ 突然發燒＋頻尿或尿失禁<br>
+      □ 失智長輩<b>突然</b>變得混亂、躁動、嗜睡（可能是感染的唯一表現）<br>
+      □ 完全尿不出來、或下腹脹痛<br>
+      □ 多尿＋爆瘦＋一直口渴（血糖警訊）<br>
+      □ 新發生的失禁合併下肢無力、麻木（神經警訊）<br>
+      □ 便秘超過一週、腹脹嘔吐
+    </div>
+    <p>就醫時，如果能帶上「3 天如廁紀錄」，醫師的判斷會快很多：</p>
+    <table>
+      <tr><th>時間</th><th>喝了什麼／多少</th><th>排尿或排便</th><th>有無漏／急</th><th>備註</th></tr>
+      <tr><td>06:30</td><td>溫水 200 ml</td><td>排尿</td><td>無</td><td>起床後</td></tr>
+      <tr><td>08:00</td><td>豆漿 250 ml</td><td>—</td><td>—</td><td>早餐</td></tr>
+      <tr><td>09:10</td><td>—</td><td>排尿</td><td>急、有漏一點</td><td>來不及脫褲</td></tr>
+      <tr><td colspan="5" style="color:#8a816d;">……照這個格式記 3 天，就是給醫師最好的禮物。</td></tr>
+    </table>
+    <div class="tip"><b>找誰？</b>泌尿科（排尿問題）、高年科／神經內科（失智相關）、復健科與<b>職能治療師</b>（動線改造、輔具選用、如廁訓練——歡迎諮詢）。</div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h2>這本手冊有幫上忙嗎？</h2>
+    <p>我是施昱廷，職能治療師。<br>我持續在粉專分享失智照顧、如廁復能、高齡輔具的實證知識——<br>追蹤起來，下次遇到照顧難題，你會知道去哪裡找答案。</p>
+    <a class="btn" href="https://www.facebook.com/shihyuting.OT" target="_blank" rel="noopener">👉 追蹤「施昱廷 職能治療師」粉專</a>
+    <div class="handle">也歡迎把這本手冊分享給正在照顧路上的朋友 💛</div>
+  </div>
+
+  <!-- 免責 -->
+  <div class="disclaim">
+    本手冊為衛教資訊，不能取代醫療診斷與治療。長輩的個別狀況（如心衰竭、腎臟病之水分限制）請以醫師與醫療團隊的指示為準。手冊內容整理自公開發表之學術研究，引用出處如下；文中影片為外部公開資源，內容與著作權屬原創作者及其頻道所有，連結僅供延伸學習參考。
+  </div>
+
+  <!-- 參考文獻 -->
+  <div class="refs">
+    <h2>主要參考文獻（APA 7）</h2>
+    <ul>
+      <li>Buck, J., Fromings Hill, J., Collins, R., Booth, J., &amp; Fleming, J. (2024). Effectiveness of non-pharmacological interventions delivered at home for urinary and faecal incontinence with homebound older people: Systematic review of randomised controlled trials. <i>Age and Ageing, 53</i>(6), afae126. https://doi.org/10.1093/ageing/afae126</li>
+      <li>Hooton, T. M., Vecchio, M., Iroz, A., Tack, I., Dornic, Q., Seksek, I., &amp; Lotan, Y. (2018). Effect of increased daily water intake in premenopausal women with recurrent urinary tract infections: A randomized clinical trial. <i>JAMA Internal Medicine, 178</i>(11), 1509–1515. https://doi.org/10.1001/jamainternmed.2018.4204</li>
+      <li>Jerez-Roig, J., Farrés-Godayol, P., Yildirim, M., et al. (2024). Prevalence of urinary incontinence and associated factors in nursing homes: A multicentre cross-sectional study. <i>BMC Geriatrics, 24</i>, 169. https://doi.org/10.1186/s12877-024-04748-1</li>
+      <li>Kohno, K., Umemoto, N., Tsutsumi, R., et al. (2023). Diaper-zero program (prompted voiding care) improves diaper use in nursing home residents. <i>The Journal of Medical Investigation, 70</i>(1.2), 221–225. https://doi.org/10.2152/jmi.70.221</li>
+      <li>Modi, R. M., Hinton, A., Pinkhas, D., et al. (2019). Implementation of a defecation posture modification device: Impact on bowel movement patterns in healthy subjects. <i>Journal of Clinical Gastroenterology, 53</i>(3), 216–219. https://doi.org/10.1097/MCG.0000000000001143</li>
+      <li>Newman, D. K. (2019). Prompted voiding for individuals with urinary incontinence. <i>Journal of Gerontological Nursing, 45</i>(2), 14–26. https://doi.org/10.3928/00989134-20190111-03</li>
+      <li>Tashiro, D., Nakahara, M., Kitajima, E., &amp; Haraguchi, K. (2020). The effects of a defecation posture, supported by the upper limbs, on respiratory function. <i>Journal of Physical Therapy Science, 32</i>(5), 332–336. https://doi.org/10.1589/jpts.32.332</li>
+      <li>Trieu, R. Q., Prott, G., Sequeira, C., et al. (2023). Using a footstool does not aid simulated defecation in undifferentiated constipation: A randomized trial. <i>Neurogastroenterology &amp; Motility, 35</i>(7), e14580. https://doi.org/10.1111/nmo.14580</li>
+    </ul>
+  </div>
+
+  <footer>
+    © 2026 施昱廷 職能治療師｜如廁訓練大寶典（長輩如廁照顧 QA 手冊）v1.3<br>
+    歡迎原樣分享；引用或改作請註明出處。
+  </footer>
+
+</div>
+</body>
+</html>
