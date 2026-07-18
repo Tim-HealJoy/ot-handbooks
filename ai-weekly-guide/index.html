@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 應用週報 DIY 指南｜施昱廷職能治療師</title>
+</head>
+<body>
+<style>
+  :root{
+    --paper:#F4EFE3; --card:#FAF6EE; --ink:#2b2620; --ink-soft:#6b5d4f;
+    --olive:#6b7a4e; --walnut:#5c4a32; --sun:#e8b64c; --clay:#c97b3d;
+    --tape:rgba(214,196,160,.55);
+  }
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:"PingFang TC","Noto Sans TC","Heiti TC",sans-serif;
+    line-height:1.85; margin:0; padding:0 16px 64px;
+  }
+  .wrap{max-width:680px; margin:0 auto}
+  .hero{padding:56px 4px 8px; text-align:center}
+  .eyebrow{font-size:13px; letter-spacing:3px; color:var(--ink-soft); margin:0 0 14px}
+  h1{font-size:clamp(30px,7vw,40px); line-height:1.25; margin:0 0 10px; letter-spacing:1px; text-wrap:balance}
+  h1 .underline{background:linear-gradient(transparent 68%, var(--sun) 68% 92%, transparent 92%)}
+  .lede{font-size:17px; color:var(--ink-soft); margin:0 auto 8px; max-width:30em}
+  .doodle-arrow{color:var(--olive); font-size:22px; margin:10px 0 0}
+
+  .card{
+    position:relative; background:var(--card); border-radius:14px;
+    padding:26px 26px 24px; margin:34px 0;
+    box-shadow:0 2px 10px rgba(92,74,50,.08);
+  }
+  .card::before{ /* 紙膠帶 */
+    content:""; position:absolute; top:-12px; left:50%; transform:translateX(-50%) rotate(-2deg);
+    width:96px; height:24px; background:var(--tape); border-radius:2px;
+  }
+  .card.tilt-l{transform:rotate(-.4deg)} .card.tilt-r{transform:rotate(.35deg)}
+  @media (prefers-reduced-motion:no-preference){
+    .card{transition:transform .25s ease}
+    .card:hover{transform:rotate(0) translateY(-2px)}
+  }
+  .stepnum{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:44px; height:44px; border-radius:50%;
+    border:3px solid var(--ink); font-size:22px; font-weight:800;
+    background:var(--sun); margin-bottom:8px;
+  }
+  .step-1 .stepnum{background:#b8c49a}
+  .step-3 .stepnum{background:#d9a878}
+  h2{font-size:22px; margin:4px 0 12px; line-height:1.4; text-wrap:balance}
+  h3{font-size:17px; margin:20px 0 6px; color:var(--walnut)}
+  p{margin:10px 0}
+  a{color:var(--walnut)}
+  .plain{
+    background:rgba(184,196,154,.25); border-radius:8px; padding:10px 14px;
+    font-size:15px; color:var(--ink);
+  }
+  .plain b{color:var(--olive)}
+  ul{padding-left:22px; margin:10px 0}
+  li{margin:6px 0}
+  li::marker{color:var(--olive)}
+
+  .prompt-box{
+    background:#2b2620; color:#f2ecdd; border-radius:10px;
+    padding:20px; font-size:15px; line-height:1.9;
+    white-space:pre-wrap; word-break:break-word;
+    font-family:"PingFang TC","Noto Sans TC",sans-serif;
+  }
+  .prompt-box .ph{color:var(--sun); font-weight:700}
+  .copybtn{
+    display:inline-block; margin-top:12px; cursor:pointer;
+    background:var(--walnut); color:#f7f2e6; border:none; border-radius:24px;
+    font-size:15px; font-weight:700; padding:10px 26px;
+    font-family:inherit; letter-spacing:1px;
+  }
+  .copybtn:hover{background:#4a3a26}
+  .copybtn:focus-visible{outline:3px solid var(--sun); outline-offset:2px}
+
+  table{border-collapse:collapse; width:100%; font-size:14px; margin:8px 0}
+  .table-scroll{overflow-x:auto}
+  th,td{border:1px solid #e0d7c2; padding:8px 10px; text-align:left; vertical-align:top}
+  th{background:rgba(184,196,154,.3); font-weight:700; white-space:nowrap}
+
+  details{margin:10px 0; background:var(--card); border-radius:10px; padding:4px 16px}
+  summary{cursor:pointer; font-weight:700; padding:10px 0; color:var(--walnut)}
+  summary:focus-visible{outline:3px solid var(--sun); outline-offset:2px}
+  details p{margin-top:0}
+
+  .divider{text-align:center; color:var(--olive); font-size:20px; letter-spacing:8px; margin:36px 0 0}
+  footer{
+    margin-top:52px; padding-top:20px; border-top:2px dashed #d6c8a8;
+    font-size:14px; color:var(--ink-soft); text-align:center; line-height:2;
+  }
+  footer a{color:var(--walnut)}
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">施昱廷職能治療師｜AI 小工具</p>
+    <h1>AI 應用週報<span class="underline"> DIY 指南</span></h1>
+    <p class="lede">讓你領域裡的大神，每週「教」你怎麼用 AI——三個步驟，做一份專屬於你的 AI 情報週報。</p>
+    <p class="doodle-arrow">↓ ↓ ↓</p>
+  </header>
+
+  <section class="card tilt-l">
+    <h2>這是什麼？</h2>
+    <p>AI 工具那麼多，最難的不是「會不會用」，而是「不知道能用在哪」。最快的解法是看<b>同領域已經做到的人</b>怎麼用，再搬回自己的工作。</p>
+    <p>這份指南教你把這件事交給 AI：每週固定幫你整理你領域的專家怎麼用 AI，而且每個案例都附一段「你可以怎麼照做」。</p>
+    <p class="plain"><b>白話說：</b>與其自己摸索 AI，不如請 AI 幫你「訂閱大神」，每週把他們的做法翻譯成你能直接抄的作業。</p>
+  </section>
+
+  <section class="card tilt-r step-1">
+    <span class="stepnum">1</span>
+    <h2>挑你要「訂閱」的大神</h2>
+    <p>列 5 到 10 位就夠，訣竅是三種人都要有：</p>
+    <ul>
+      <li><b>同領域的實踐者</b>：跟你做一樣工作的人，案例最能直接搬</li>
+      <li><b>跨領域的高手</b>：內容創作、教學、生產力領域，方法通用</li>
+      <li><b>國外的指標人物</b>：他們的做法通常領先半年到一年</li>
+    </ul>
+    <h3>我自己的名單（給你參考）</h3>
+    <div class="table-scroll">
+      <table>
+        <tr><th>國內</th><td>雷蒙（數位工作流）、瓦基（閱讀與知識管理）、于為暢（個人品牌）、簡報藝術烘焙坊（簡報設計）</td></tr>
+        <tr><th>國外</th><td>Ethan Mollick（華頓教授，AI 教育應用）、Justin Welsh、Dan Koe（一人公司）、Ali Abdaal（生產力）、Lenny Rachitsky（產品與 AI 訪談）</td></tr>
+      </table>
+    </div>
+    <p class="plain"><b>沒有名單也沒關係：</b>Prompt 裡留空，AI 會先幫你推薦你領域的人選，覺得準再固定下來。</p>
+  </section>
+
+  <section class="card tilt-l step-2">
+    <span class="stepnum">2</span>
+    <h2>複製這段 Prompt</h2>
+    <p>貼給 ChatGPT 或 Claude 都可以（免費版就能跑）。<span style="color:var(--clay);font-weight:700">【】裡的字換成你自己的</span>：</p>
+    <div class="prompt-box" id="promptText">你是我的 AI 情報助理。請幫我整理<span class="ph">【你的領域，例如：行銷／教學／護理】</span>中，國內外知名專家與自媒體工作者最近如何使用 AI 的具體案例。我特別想追蹤這些人：<span class="ph">【你的大神名單，沒有就寫「請幫我推薦」】</span>。
+
+要求：
+1. 挑 3 到 5 個案例，每個說明：他做了什麼、用什麼工具、為什麼有效
+2. 每個案例最後加一段「我可以怎麼套用到自己的工作」
+3. 最後給我 1 到 2 個本週就能改的工作流建議
+4. 附上所有來源連結；找不到就老實說，不要編</div>
+    <button class="copybtn" id="copyBtn" type="button">一鍵複製 Prompt</button>
+  </section>
+
+  <section class="card tilt-r step-3">
+    <span class="stepnum">3</span>
+    <h2>把它變成每週儀式</h2>
+    <ul>
+      <li><b>固定時間跑一次</b>：我選週五下午，替下週準備靈感；你選一個你一定有空的 15 分鐘</li>
+      <li><b>一週只抄一招</b>：五個案例裡挑「最像你工作」的那一個動手，其他先放著——貪多是放棄的開始</li>
+      <li><b>記下你抄了什麼</b>：一行就好。一季後回頭看，就是你的 AI 進步履歷</li>
+    </ul>
+    <p class="plain"><b>白話說：</b>這不是閱讀作業，是每週一次的「偷師時間」。看五招、學一招，就贏過大多數人。</p>
+  </section>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <section class="card tilt-l">
+    <h2>進階：讓它全自動寄到信箱</h2>
+    <p>我自己又多做了一步：用 Claude Code 把這個 Prompt 設成排程，<b>每週五 17:00 自動研究、自動寫好、自動寄 Email 給我</b>，我只負責打開信看。</p>
+    <p>這一步需要一點工具設定（不用寫程式，但要裝軟體），不適合塞在這一頁。如果想看完整教學，回到粉專那篇貼文留言告訴我，人多我就寫。</p>
+  </section>
+
+  <section class="card tilt-r">
+    <h2>加碼：我在臉書常看的 AI 意見領袖</h2>
+    <p>不想等每週報告，平常滑臉書就想吸收的話，這幾位我自己常看、也都持續在分享 AI 實際用法：</p>
+    <div class="table-scroll">
+      <table>
+        <tr><th>雷蒙</th><td>數位工作流與 AI 分身實踐者，我的週報系統就是受他啟發，電子報每期都有可以直接抄的做法。<a href="https://raymondhouch.com/" rel="noopener">雷蒙三十</a></td></tr>
+        <tr><th>電腦玩物 Esor</th><td>AI 工作流與數位工具的老牌實踐者，從筆記方法到 AI 自動化都有教學。<a href="https://www.playpcesor.com/" rel="noopener">電腦玩物網站</a></td></tr>
+        <tr><th>蔡依橙</th><td>醫師、新思惟國際創辦人，示範 AI 用在閱讀、寫作、研究與生活的第一手心得，講話很實在。<a href="https://i-chentsai.innovarad.tw/" rel="noopener">個人網站</a></td></tr>
+        <tr><th>尹相志</th><td>AI 技術專家，把 Agentic AI（讓 AI 自己做事）這類新趨勢講得一般人聽得懂。<a href="https://www.facebook.com/allanyiin/" rel="noopener">Facebook</a></td></tr>
+        <tr><th>楊比比</th><td>影像教學名師，AI 修圖與生成影像的實作教學又多又佛心。<a href="https://www.facebook.com/photoshopyangbibi/" rel="noopener">Facebook</a></td></tr>
+      </table>
+    </div>
+    <p class="plain"><b>白話說：</b>週報是「主動出擊」，追蹤這些人是「日常薰陶」，兩個搭配效果最好。</p>
+  </section>
+
+  <section>
+    <h2 style="font-size:20px;margin:28px 0 6px">常見問題</h2>
+    <details>
+      <summary>AI 會不會亂編案例騙我？</summary>
+      <p>會，所以 Prompt 最後一條要求「附來源連結、找不到就老實說」。養成習慣：要引用或轉述之前，點開連結確認過再用。</p>
+    </details>
+    <details>
+      <summary>免費版的 AI 跑得動嗎？</summary>
+      <p>跑得動。每週一次的量，ChatGPT 或 Claude 免費版都夠用；有開聯網搜尋功能的話，案例會更新、來源更準。</p>
+    </details>
+    <details>
+      <summary>我的領域很冷門，找得到案例嗎？</summary>
+      <p>把領域放寬一層試試：例如「音樂治療」找不到，就先找「治療師」或「教學工作者」——方法大多能跨領域搬，AI 也會幫你想「怎麼套用到你的情境」。</p>
+    </details>
+  </section>
+
+  <footer>
+    <p><b>施昱廷 職能治療師</b><br>
+    高齡照護 × 課程講師 × AI 應用實踐<br>
+    <a href="https://www.facebook.com/shihyuting.OT" rel="noopener">Facebook 粉專</a>｜<a href="https://otshih.com" rel="noopener">OTshih.com</a></p>
+    <p style="font-size:12px">本指南可自由分享，轉載請註明出處。</p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('copyBtn').addEventListener('click', async function(){
+    var btn = this;
+    var text = document.getElementById('promptText').innerText;
+    var ok = false;
+    try { await navigator.clipboard.writeText(text); ok = true; }
+    catch(e){
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      try { ok = document.execCommand('copy'); } catch(e2){ ok = false; }
+      document.body.removeChild(ta);
+    }
+    btn.textContent = ok ? '已複製，去貼給 AI 吧！' : '複製失敗，請長按文字手動選取';
+    setTimeout(function(){ btn.textContent = '一鍵複製 Prompt'; }, 2500);
+  });
+</script>
+
+</body>
+</html>
